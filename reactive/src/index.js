@@ -1,5 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  createTheme,
+  ThemeProvider,
+  responsiveFontSizes,
+} from "@mui/material";
+
 import './index.css';
 import App from './App';
 import { initializeApp } from "firebase/app";
