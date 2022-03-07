@@ -2,6 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';  
 import Herolayout from './Herolayout';
+import { Link } from 'react-router-dom'
 
 const backgroundImage =
   'https://ik.imagekit.io/ugyodiq15/stacking_b-Z8Fr_qi.jfif?ik-sdk-version=javascript-1.4.3&updatedAt=1646075086534';
@@ -38,10 +39,12 @@ export default function HeroSection() {
         size="large"
         align="center"
         component="a"
-        href="/premium-themes/onepirate/sign-up/"
+        
         sx={{ minWidth: 200 }}
       >
+          <Link to="/register">
         Register
+        </Link>
       </Button>
       <Typography variant="body2" color="inherit" align="center" sx={{ mt: 2 }}>
         Discover the experience

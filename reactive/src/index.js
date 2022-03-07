@@ -5,7 +5,7 @@ import {
   ThemeProvider,
   responsiveFontSizes,
 } from "@mui/material";
-
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import { initializeApp } from "firebase/app";
