@@ -4,6 +4,9 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import AddReactionIcon from '@mui/icons-material/AddReaction';
+import DashboardCustomizeIcon from '@mui/icons-material/DashboardCustomize';
+import EqualizerIcon from '@mui/icons-material/Equalizer';
 
 const item = {
   display: 'flex',
@@ -29,17 +32,16 @@ export default function How() {
           <Grid item xs={12} md={4}>
             <Box sx={item}>
               <Box
-                component="img"
-                src="/static/themes/onepirate/productValues1.svg"
                 alt="Choose Habit"
                 sx={{ height: 55 }}
               />
+              <AddReactionIcon fontSize='large'/>
               <Typography variant="h6" sx={{ my: 5 }}>
                 Pick a habit
               </Typography>
               <Typography variant="h5">
                 {
-                  'From the latest trendy boutique hotel to the iconic palace with XXL pool'
+                  'The first step to any real habit change is identifying what habit you want to begin'
                 }
 
                 {
@@ -51,37 +53,37 @@ export default function How() {
           <Grid item xs={12} md={4}>
             <Box sx={item}>
               <Box
-                component="img"
-                src="/static/themes/onepirate/productValues2.svg"
+                
                 alt="Set Goals"
                 sx={{ height: 55 }}
               />
+              <DashboardCustomizeIcon fontSize="large"/>
               <Typography variant="h6" sx={{ my: 5 }}>
                 Set your goals
               </Typography>
               <Typography variant="h5">
                 {
-                  'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '
+                  'Set a systematic way to achieve your goals. You can do this by setting a goal for each habit.'
                 }
 
-                {'your Sundays will not be alike.'}
+                {'Track your day to day progress of your goals set.'}
               </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
               <Box
-                component="img"
-                src="/static/themes/onepirate/productValues3.svg"
+                
                 alt="clock"
                 sx={{ height: 55 }}
               />
+              <EqualizerIcon fontSize='large' />
               <Typography variant="h6" sx={{ my: 5 }}>
                 Track of your Habits
               </Typography>
               <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+                {'Keep track of your progress and achieve more from your newly formed habits.'}
+                {'that you have absolute control over'}
               </Typography>
             </Box>
           </Grid>

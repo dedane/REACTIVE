@@ -33,15 +33,15 @@ export default function HeroSection() {
         create new habits by tracking your day to day progress
       </Typography>
       <Button
-        color="secondary"
+        dark
         variant="contained"
         size="large"
         align="center"
-        component="a"
-        
         sx={{ minWidth: 200 }}
       >
-          <Link to="/register">
+          <Link
+          style={{ textDecoration: 'none', color: 'white' }}
+           to="/register">
         Register
         </Link>
       </Button>
