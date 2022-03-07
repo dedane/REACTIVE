@@ -16,14 +16,14 @@ export default function How() {
   return (
     <Box
       component="section"
-      sx={{ display: 'flex', overflow: 'hidden', bgcolor: 'secondary.light' }}
+      sx={{ display: 'flex', overflow: 'hidden', bgcolor: 'none' }}
     >
       <Container sx={{ mt: 15, mb: 30, display: 'flex', position: 'relative' }}>
         <Box
           component="img"
-          src="/static/themes/onepirate/productCurvyLines.png"
+          src=""
           alt="curvy lines"
-          sx={{ pointerEvents: 'none', position: 'absolute', top: -180 }}
+          sx={{ pointerEvents: 'none', position: 'relative', top: -180 }}
         />
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
@@ -31,11 +31,11 @@ export default function How() {
               <Box
                 component="img"
                 src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
+                alt="Choose Habit"
                 sx={{ height: 55 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                The best luxury hotels
+                Pick a habit
               </Typography>
               <Typography variant="h5">
                 {
@@ -53,11 +53,11 @@ export default function How() {
               <Box
                 component="img"
                 src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
+                alt="Set Goals"
                 sx={{ height: 55 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                New experiences
+                Set your goals
               </Typography>
               <Typography variant="h5">
                 {
@@ -77,7 +77,7 @@ export default function How() {
                 sx={{ height: 55 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                Exclusive rates
+                Track of your Habits
               </Typography>
               <Typography variant="h5">
                 {'By registering, you will access specially negotiated rates '}

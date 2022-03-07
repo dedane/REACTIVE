@@ -5,8 +5,7 @@ import Herolayout from './Herolayout';
 import { Link } from 'react-router-dom'
 
 const backgroundImage =
-  'https://ik.imagekit.io/ugyodiq15/stacking_b-Z8Fr_qi.jfif?ik-sdk-version=javascript-1.4.3&updatedAt=1646075086534';
-
+  'https://ik.imagekit.io/ugyodiq15/jeremy-thomas-FO7bKvgETgQ-unsplash_21ykwsjmxaPc.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1646363152753'
 export default function HeroSection() {
   return (
     <Herolayout
