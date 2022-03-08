@@ -17,11 +17,20 @@ const item = {
 
 export default function How() {
   return (
+      <div>
+          <Box 
+        sx={{mx: 'auto',
+            mt: 15,
+             width: 500,
+             textAlign: 'center'}}>
+                <Typography color={"primary"} align="center" variant="h2"> HOW WE DO IT</Typography></Box>
     <Box
       component="section"
       sx={{ display: 'flex', overflow: 'hidden', bgcolor: 'none' }}
     >
-      <Container sx={{ mt: 15, mb: 30, display: 'flex', position: 'relative' }}>
+        
+      <Container sx={{ mt: 5, mb: 15, display: 'flex', position: 'relative' }}>
+          
         <Box
           component="img"
           src=""
@@ -90,5 +99,6 @@ export default function How() {
         </Grid>
       </Container>
     </Box>
+    </div>
   )
 }

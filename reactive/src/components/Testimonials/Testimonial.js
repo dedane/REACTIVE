@@ -8,7 +8,7 @@ function Testimonial() {
   return (
     <div>
      
-            <Container sz={{ align: 'center', justify: 'center'}}>
+            <Container sz={{ position: 'relative'}}>
             <Stack direction="row" spacing={4}>
             <Card sx={{ maxWidth: 400, maxHeight: 250, marginright: 'auto', align: 'center' }}>
                 <CardContent>
