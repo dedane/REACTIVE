@@ -39,7 +39,7 @@ function Testimonial() {
                 </Stack>
             </Card>
             <Paper>
-                <img height="400" width="400" src="https://ik.imagekit.io/ugyodiq15/Group_70__gPPJRuxu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1625689465393" />
+                <img alt="pri" height="400" width="400" src="https://ik.imagekit.io/ugyodiq15/Group_70__gPPJRuxu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1625689465393" />
             </Paper>
             </Stack>
             </Container>
