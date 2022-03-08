@@ -13,7 +13,7 @@ function Testimonial() {
                     justifyContent="space-evenly"
                     alignItems="center"
                     spacing={2}>
-            <Card sx={{ maxWidth: 400, maxHeight: 400, marginright: 'auto', align: 'center' }}>
+            <Card sx={{ maxWidth: 400, maxHeight: 400, marginright: 'auto', align: 'center' }} flat>
                 <CardContent>
                 <Typography variant='h4'>
                 "The app helps me organize all my writing projects. And that makes it an indispensable tool both in business and in life."
