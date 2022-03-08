@@ -9,7 +9,10 @@ function Testimonial() {
     <div>
      
             <Container sz={{ position: 'relative'}}>
-            <Stack direction="row" spacing={4}>
+            <Stack direction="row"
+                    justifyContent="space-evenly"
+                    alignItems="center"
+                    spacing={2}>
             <Card sx={{ maxWidth: 400, maxHeight: 250, marginright: 'auto', align: 'center' }}>
                 <CardContent>
                 <Typography variant='h5'>

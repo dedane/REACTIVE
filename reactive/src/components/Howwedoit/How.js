@@ -86,7 +86,7 @@ export default function How() {
                 alt="clock"
                 sx={{ height: 55 }}
               />
-              <EqualizerIcon sx={{ fontSize: 100 }} />
+              <EqualizerIcon sx={{ fontSize: 100, color: 'secondary' }} />
               <Typography variant="h6" sx={{ my: 5 }}>
                 Track of your Habits
               </Typography>
