@@ -44,7 +44,7 @@ export default function How() {
                 alt="Choose Habit"
                 sx={{ height: 55 }}
               />
-              <AddReactionIcon fontSize='large'/>
+              <AddReactionIcon sx={{ fontSize: 100 }}/>
               <Typography variant="h6" sx={{ my: 5 }}>
                 Pick a habit
               </Typography>
@@ -66,7 +66,7 @@ export default function How() {
                 alt="Set Goals"
                 sx={{ height: 55 }}
               />
-              <DashboardCustomizeIcon fontSize="large"/>
+              <DashboardCustomizeIcon sx={{ fontSize: 100 }}/>
               <Typography variant="h6" sx={{ my: 5 }}>
                 Set your goals
               </Typography>
@@ -86,7 +86,7 @@ export default function How() {
                 alt="clock"
                 sx={{ height: 55 }}
               />
-              <EqualizerIcon fontSize='large' />
+              <EqualizerIcon sx={{ fontSize: 100 }} />
               <Typography variant="h6" sx={{ my: 5 }}>
                 Track of your Habits
               </Typography>
