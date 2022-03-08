@@ -77,11 +77,17 @@ function Navbar() {
                             display: {xs: 'block', md: 'none'}
 
                         }} >
-                            {Pages.map((page) => (
-                                <MenuItem key={page} >
-                                    <Typography textAlign="center" variant="h6">{page}</Typography> 
+                            
+                                <MenuItem >
+                                    <Typography textAlign="center" variant="h6"><Link 
+                            style={{ textDecoration: 'none', color: 'white' }}
+                            to="/Home">Home</Link></Typography> 
                                 </MenuItem>
-                            ))}
+                                <MenuItem >
+                                <Link 
+                            style={{ textDecoration: 'none', color: 'white' }}
+                            to="/ExpenseTracking">My Progress</Link>
+                                </MenuItem>
                         </Menu>
                 </Box>
                 <Typography
@@ -131,11 +137,23 @@ function Navbar() {
                         open={Boolean(anchorElUser)}
                         onClose={handleCloseUserMenu}
                         >
-                            {settings.map((settings) => (
-                                <MenuItem key={settings} onClick={handleCloseUserMenu}>
-                                    <Typography textAlign="center" variant="h6">{settings}</Typography>
+                            
+                                <MenuItem  onClick={handleCloseUserMenu}>
+                                    <Link 
+                            style={{ textDecoration: 'none', color: 'white' }}
+                            to="/Login">Login</Link>
                                 </MenuItem>
-                            ))}
+                                <MenuItem  onClick={handleCloseUserMenu}>
+                                    <Link 
+                            style={{ textDecoration: 'none', color: 'white' }}
+                            to="/Register">Register</Link>
+                                </MenuItem>
+                                <MenuItem  onClick={handleCloseUserMenu}>
+                                    <Link 
+                            style={{ textDecoration: 'none', color: 'white' }}
+                            to="/Reset">Reset</Link>
+                                </MenuItem>
+                            
                         </Menu>
                 </Box>
             </Toolbar>
