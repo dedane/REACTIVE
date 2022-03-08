@@ -45,7 +45,7 @@ export default function How() {
                 sx={{ height: 55 }}
               />
               <AddReactionIcon sx={{ fontSize: 100 }}/>
-              <Typography variant="h6" sx={{ my: 5 }}>
+              <Typography variant="h3" sx={{ my: 5 }}>
                 Pick a habit
               </Typography>
               <Typography variant="h5">
@@ -67,8 +67,8 @@ export default function How() {
                 sx={{ height: 55 }}
               />
               <DashboardCustomizeIcon sx={{ fontSize: 100 }}/>
-              <Typography variant="h6" sx={{ my: 5 }}>
-                Set your goals
+              <Typography variant="h3" sx={{ my: 5 }}>
+                Set goals
               </Typography>
               <Typography variant="h5">
                 {
@@ -87,8 +87,8 @@ export default function How() {
                 sx={{ height: 55 }}
               />
               <EqualizerIcon sx={{ fontSize: 100, color: 'secondary' }} />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                Track of your Habits
+              <Typography variant="h3" sx={{ my: 5 }}>
+                Track  Habit
               </Typography>
               <Typography variant="h5">
                 {'Keep track of your progress and achieve more from your newly formed habits.'}

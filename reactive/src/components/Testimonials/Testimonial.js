@@ -13,18 +13,18 @@ function Testimonial() {
                     justifyContent="space-evenly"
                     alignItems="center"
                     spacing={2}>
-            <Card sx={{ maxWidth: 400, maxHeight: 250, marginright: 'auto', align: 'center' }}>
+            <Card sx={{ maxWidth: 400, maxHeight: 400, marginright: 'auto', align: 'center' }}>
                 <CardContent>
-                <Typography variant='h5'>
+                <Typography variant='h4'>
                 "The app helps me organize all my writing projects. And that makes it an indispensable tool both in business and in life."
                 </Typography>
                 </CardContent>
                 <Stack direction="row" spacing={2}>
                 <CardContent>
-                    <Typography variant="body2" gutterBottom>
+                    <Typography variant="subtitle1" gutterBottom>
                         Irene Mworia
                     </Typography>
-                    <Typography variant="body2" gutterBottom>
+                    <Typography variant="subtitle1" gutterBottom>
                         Student
                     </Typography>
                 </CardContent>
@@ -39,7 +39,7 @@ function Testimonial() {
                 </Stack>
             </Card>
             <Paper>
-                <img height="250" width="250" src="https://ik.imagekit.io/ugyodiq15/Group_70__gPPJRuxu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1625689465393" />
+                <img height="400" width="400" src="https://ik.imagekit.io/ugyodiq15/Group_70__gPPJRuxu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1625689465393" />
             </Paper>
             </Stack>
             </Container>
