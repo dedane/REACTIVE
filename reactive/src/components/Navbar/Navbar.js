@@ -11,6 +11,7 @@ import Avatar from '@mui/material/Avatar'
 import Button from '@mui/material/Button'
 import Tooltip from '@mui/material/Tooltip'
 import { MenuItem } from '@mui/material'
+import { Link } from 'react-router-dom'
 /* import Home from '../../Home'
 import MyProgress from '../../ExpenseTracking' */
 
@@ -91,14 +92,22 @@ function Navbar() {
                         Habit Tracker
                     </Typography>
                 <Box sx={{ flexGrow: 4, display: {xs: 'none', md: 'flex'} }} >
-                    {Pages.map((page) => (
+                    
                         <Button 
-                        key={page} 
-                      
                          sx={{ my: 2, color: 'white', display: 'block'}}>
-                             {page}
+                            <Link 
+                            style={{ textDecoration: 'none', color: 'white' }}
+                            to="/Home">Home</Link>
+                            
                         </Button>
-                    ))}
+                        <Button 
+                         sx={{ my: 2, color: 'white', display: 'block'}}>
+                            <Link 
+                            style={{ textDecoration: 'none', color: 'white' }}
+                            to="/MyProgress">My Progress</Link>
+                            
+                        </Button>
+                    
                 </Box>
                 <Box sx={{flexGrow: 0}}>
                     <Tooltip title="Open settings">
