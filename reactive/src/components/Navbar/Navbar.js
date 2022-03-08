@@ -104,7 +104,7 @@ function Navbar() {
                          sx={{ my: 2, color: 'white', display: 'block'}}>
                             <Link 
                             style={{ textDecoration: 'none', color: 'white' }}
-                            to="/MyProgress">My Progress</Link>
+                            to="/ExpenseTracking">My Progress</Link>
                             
                         </Button>
                     
