@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ExpenseItem from './HabitItems';
+import HabitItem from './HabitItems';
 import './HabitList.css';
 
 const HabitList = (props) => {
@@ -11,7 +11,7 @@ const HabitList = (props) => {
   return (
     <ul className='Habit-list'>
       {props.items.map((Habit) => (
-        <ExpenseItem
+        <HabitItem
           key={Habit.id}
           title={Habit.title}
           amount={Habit.amount}

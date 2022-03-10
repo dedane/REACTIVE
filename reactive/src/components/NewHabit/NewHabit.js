@@ -5,12 +5,12 @@ import HabitForm from './HabitForm'
 function NewHabit(props)  {
     const [isEditing, setIsEditing] = useState(false);
   
-    const saveExpenseDataHandler = (enteredExpenseData) => {
-      const expenseData = {
-        ...enteredExpenseData,
+    const savehabitDataHandler = (enteredhabitData) => {
+      const habitData = {
+        ...enteredhabitData,
         id: Math.random().toString(),
       };
-      props.onAddHabit(expenseData);
+      props.onAddHabit(habitData);
       setIsEditing(false);
     };
   
@@ -23,13 +23,13 @@ function NewHabit(props)  {
     };
   
     return (
-      <div className='new-expense'>
+      <div className='new-habit'>
         {!isEditing && (
           <button onClick={startEditingHandler}>Add New Habit</button>
         )}
         {isEditing && (
           <HabitForm
-            onSaveExpenseData={saveExpenseDataHandler}
+            onSavehabitData={savehabitDataHandler}
             onCancel={stopEditingHandler}
           />
         )}

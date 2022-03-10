@@ -7,8 +7,8 @@ function HabitFilter(props) {
         props.onDateChange(event.target.value)
     }
     return (
-        <div className='habits-filter'>
-            <div className='habitss-filter__control'>
+        <div className='habit-filter'>
+            <div className='habit-filter__control'>
                 <label>Filter by year</label>
                 <select value={props.selected} onChange={dateChangeHandler}>
                     <option value='2022'>2022</option>

@@ -7,7 +7,7 @@ function HabitForm(props) {
    /* const [userInput, setUserInput ] = useState({
         setTitle: '',
         setDate: '',
-        setExpense: '',
+        sethabit: '',
     }); */
    
     const [enteredTitle, setEnteredTitle] = useState();
@@ -31,49 +31,49 @@ function HabitForm(props) {
     const priceChangeHandler = (event) => {
        /* setUserInput({
             ...userInput,
-            setExpense: event.target.value,
+            sethabit: event.target.value,
         })   */   
         setEnteredAmount(event.target.value);
     };
     /*const priceChangeHandler = (event) => {
         setUserInput({
             ...userInput,
-            setExpense: event.target.value,
+            sethabit: event.target.value,
         )}
     };*/
     const submitHandler = (event) => {
         event.preventDefault();
 
-        const expenseData = {
+        const habitData = {
             title: enteredTitle,
             amount: EnteredAmount,
             date: new Date(enteredDate),
         }
-        console.log(expenseData);
-        props.onSaveExpenseData(expenseData);
+        console.log(habitData);
+        props.onSavehabitData(habitData);
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
 
     }
     return (
-        <div className="new-expense">
+        <div className="new-habit">
             <form onSubmit={submitHandler}>
-                <div className="new-expense__controls">
-                    <div className="new-expense__control">
+                <div className="new-habit__controls">
+                    <div className="new-habit__control">
                         <label>Title</label>
                         <input type="text" value={enteredTitle}  onChange={titleChangeHandler} />
                     </div>
-                    <div className="new-expense__control">
+                    <div className="new-habit__control">
                         <label>Percentage</label>
                         <input type="number"  min="o.o1" value={EnteredAmount} default="o.o1" onChange={priceChangeHandler}/>
                     </div>
-                    <div className="new-expense__control">
+                    <div className="new-habit__control">
                         <label>Date</label>
                         <input type="date"  min="2021-01-01" value={enteredDate} max="2022-12-31" onChange={dateChangeHandler}/>
                     </div>
                 </div>
-                <div className="new-expense__actions">
+                <div className="new-habit__actions">
                     <button type="submit">Add Habit</button>
                 </div>
             </form>

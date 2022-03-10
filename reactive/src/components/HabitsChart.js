@@ -18,9 +18,9 @@ const HabitsChart = (props) => {
     { label: 'Dec', value: 0 },
   ];
 
-  for (const expense of props.expenses) {
-    const expenseMonth = expense.date.getMonth(); // starting at 0 => January => 0
-    chartDataPoints[expenseMonth].value += expense.amount;
+  for (const Habit of props.Habits) {
+    const habitMonth = Habit.date.getMonth(); // starting at 0 => January => 0
+    chartDataPoints[habitMonth].value += Habit.amount;
   }
 
   return <Chart dataPoints={chartDataPoints} />;

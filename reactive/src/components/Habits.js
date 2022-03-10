@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import ExpenseItems from './HabitItems';
+import HabitItems from './HabitItems';
 import './Habits.css'
-import ExpenseFilter from './ExpenseFilter/HabitFilter'
+import HabitFilter from './HabitFilter/HabitFilter'
 import HabitsChart from './HabitsChart';
-import ExpensesList from './HabitList'
+import HabitsList from './HabitList'
 
 
 function Habits(props) {
@@ -13,27 +13,26 @@ function Habits(props) {
         dateSet(dates)
         console.log(dates)
     }
-    const filteredDate = props.items.filter((expense) =>{
-        return expense.date.getFullYear().toString() ===  setDate;
+    const filteredDate = props.items.filter((habit) =>{
+        return habit.date.getFullYear().toString() ===  setDate;
     }) 
     return (
     <div>
         
         <div className="Habits">
         <HabitsChart Habits={filteredDate} />
-        <ExpenseFilter 
+        <HabitFilter 
             selected={setDate}
             onDateChange={selectedDateHandler}/>
             {filteredDate.map((Habit) => (  
-                <ExpenseItems
+                <HabitItems
                     key={Habit.id}
                     title={Habit.title}
                     date={Habit.date}
                     amount={Habit.amount}
                  /> 
-
             ))} 
-            <ExpensesList items={filteredDate} />
+            <HabitsList items={filteredDate} />
         </div>
     </div>
     )

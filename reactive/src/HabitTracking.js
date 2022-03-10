@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import './App.css';
-import NewExpense from './components/NewHabit/NewHabit';
+import NewHabit from './components/NewHabit/NewHabit';
 import Habits from './components/Habits';
 import Chart from './components/Chart/ChartBar';
 
@@ -53,7 +53,7 @@ function App() {
     <div>
       <h2>Lets Get Started!!!</h2>
       <Chart />
-      <NewExpense onAddHabit={addHabitHandler}/>
+      <NewHabit onAddHabit={addHabitHandler}/>
       <Habits 
         items={enteredHabit}
         />
