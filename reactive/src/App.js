@@ -4,7 +4,7 @@ import Login from "./Login";
 import Register from "./Register";
 import Reset from "./Reset";
 import Home from "./Home";
-import ExpenseTracking from "./ExpenseTracking";
+import ExpenseTracking from "./HabitTracking";
 
 function App() {
   return (

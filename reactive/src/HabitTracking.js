@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './App.css';
 import NewExpense from './components/NewHabit/NewHabit';
-import Expenses from './components/Expenses';
+import Habits from './components/Habits';
 import Chart from './components/Chart/ChartBar';
 
 const DUMMY_DATA = [
@@ -54,7 +54,7 @@ function App() {
       <h2>Lets Get Started!!!</h2>
       <Chart />
       <NewExpense onAddHabit={addHabitHandler}/>
-      <Expenses 
+      <Habits 
         items={enteredHabit}
         />
     </div>

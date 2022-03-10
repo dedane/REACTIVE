@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import ExpenseItems from './ExpenseItems';
-import './Expenses.css'
-import ExpenseFilter from './ExpenseFilter/ExpenseFilter'
-import ExpensesChart from './ExpensesChart';
-import ExpensesList from './ExpensesList'
+import ExpenseItems from './HabitItems';
+import './Habits.css'
+import ExpenseFilter from './ExpenseFilter/HabitFilter'
+import HabitsChart from './HabitsChart';
+import ExpensesList from './HabitList'
 
 
-function Expenses(props) {
+function Habits(props) {
     const [setDate, dateSet] = useState('2020');
     
     const selectedDateHandler = dates => {
@@ -19,17 +19,17 @@ function Expenses(props) {
     return (
     <div>
         
-        <div className="expenses">
-        <ExpensesChart expenses={filteredDate} />
+        <div className="Habits">
+        <HabitsChart Habits={filteredDate} />
         <ExpenseFilter 
             selected={setDate}
             onDateChange={selectedDateHandler}/>
-            {filteredDate.map((expense) => (  
+            {filteredDate.map((Habit) => (  
                 <ExpenseItems
-                    key={expense.id}
-                    title={expense.title}
-                    date={expense.date}
-                    amount={expense.amount}
+                    key={Habit.id}
+                    title={Habit.title}
+                    date={Habit.date}
+                    amount={Habit.amount}
                  /> 
 
             ))} 
@@ -39,4 +39,4 @@ function Expenses(props) {
     )
 }
 
-export default Expenses
+export default Habits

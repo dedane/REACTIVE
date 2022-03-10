@@ -1,14 +1,14 @@
 import React from 'react'
-import './ExpenseFilter.css'
+import './HabitFilter.css'
 
-function ExpenseFilter(props) {
+function HabitFilter(props) {
    
     const dateChangeHandler = (event) => {
         props.onDateChange(event.target.value)
     }
     return (
-        <div className='expenses-filter'>
-            <div className='expenses-filter__control'>
+        <div className='habits-filter'>
+            <div className='habitss-filter__control'>
                 <label>Filter by year</label>
                 <select value={props.selected} onChange={dateChangeHandler}>
                     <option value='2022'>2022</option>
@@ -21,4 +21,4 @@ function ExpenseFilter(props) {
     )
 }
 
-export default ExpenseFilter
+export default HabitFilter
