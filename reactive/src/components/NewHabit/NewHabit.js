@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import './NewExpense.css'
-import ExpenseForm from './ExpenseForm'
+import './NewHabit.css'
+import HabitForm from './HabitForm'
 
-function NewExpense(props)  {
+function NewHabit(props)  {
     const [isEditing, setIsEditing] = useState(false);
   
     const saveExpenseDataHandler = (enteredExpenseData) => {
@@ -10,7 +10,7 @@ function NewExpense(props)  {
         ...enteredExpenseData,
         id: Math.random().toString(),
       };
-      props.onAddExpense(expenseData);
+      props.onAddHabit(expenseData);
       setIsEditing(false);
     };
   
@@ -25,10 +25,10 @@ function NewExpense(props)  {
     return (
       <div className='new-expense'>
         {!isEditing && (
-          <button onClick={startEditingHandler}>Add New Expense</button>
+          <button onClick={startEditingHandler}>Add New Habit</button>
         )}
         {isEditing && (
-          <ExpenseForm
+          <HabitForm
             onSaveExpenseData={saveExpenseDataHandler}
             onCancel={stopEditingHandler}
           />
@@ -37,4 +37,4 @@ function NewExpense(props)  {
     );
   };
 
-export default NewExpense
+export default NewHabit

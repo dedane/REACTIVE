@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
-import './ExpenseForm.css'
+import './HabitForm.css'
 
 
-function ExpenseForm(props) {
+function HabitForm(props) {
    /* const [userInput, setUserInput ] = useState({
         setTitle: '',
         setDate: '',
@@ -81,4 +81,4 @@ function ExpenseForm(props) {
     )
 }
 
-export default ExpenseForm
+export default HabitForm

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import './App.css';
-import NewExpense from './components/NewExpense/NewExpense';
+import NewExpense from './components/NewHabit/NewHabit';
 import Expenses from './components/Expenses';
 import Chart from './components/Chart/ChartBar';
 
@@ -40,11 +40,11 @@ const DUMMY_DATA = [
 function App() {
   
 
-  const [enteredExpense, setEnteredExpense] = useState(DUMMY_DATA)
+  const [enteredHabit, setEnteredHabit] = useState(DUMMY_DATA)
 
-  const addExpenseHandler = expense =>{
-    setEnteredExpense((prevExpenses) => {
-      return [expense, ...prevExpenses]
+  const addHabitHandler = Habit =>{
+    setEnteredHabit((prevHabit) => {
+      return [Habit, ...prevHabit]
     })
   }
 
@@ -53,9 +53,9 @@ function App() {
     <div>
       <h2>Lets Get Started!!!</h2>
       <Chart />
-      <NewExpense onAddExpense={addExpenseHandler}/>
+      <NewExpense onAddHabit={addHabitHandler}/>
       <Expenses 
-        items={enteredExpense}
+        items={enteredHabit}
         />
     </div>
   );
