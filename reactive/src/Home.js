@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 
 import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/Herosection/Herosection";
@@ -19,10 +18,6 @@ export default function Home() {
       <How />
       <Testimonial />
       <Footer />
-      
-      
-      
-      
    {/*  </Paper> */}
     </div>
   );

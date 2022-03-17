@@ -71,7 +71,7 @@ function Navbar() {
                             vertical: 'top',
                             horizontal: 'left',
                         }}
-                        open={Boolean(anchorElNav)}
+                        open={Boolean(anchorElNav, handleOpenNavMenu)}
                         onClose={handleCloseNavMenu}
                         sx={{
                             display: {xs: 'block', md: 'none'}
