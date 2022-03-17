@@ -7,7 +7,7 @@ import HabitsList from './HabitList'
 
 
 function Habits(props) {
-    const [setDate, dateSet] = useState('2020');
+    const [setDate, dateSet] = useState('2022');
     
     const selectedDateHandler = dates => {
         dateSet(dates)
