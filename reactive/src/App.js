@@ -4,7 +4,7 @@ import Login from "./Login";
 import Register from "./Register";
 import Reset from "./Reset";
 import Home from "./Home";
-import ExpenseTracking from "./HabitTracking";
+import HabitTracking from "./HabitTracking";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Route exact path="/Login" element={<Login />} />
           <Route exact path="/register" element={<Register />} />
           <Route exact path="/reset" element={<Reset />} />
-          <Route exact path="/ExpenseTracking" element={<ExpenseTracking />} />
+          <Route exact path="/HabitTracking" element={<HabitTracking />} />
         </Routes>
       </Router>
     </div>
